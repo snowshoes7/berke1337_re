@@ -3,7 +3,7 @@
 int main() {
     int x;
     printf("Enter the secret number: ");
-    scanf("%d\n", &x);
+    scanf("%d", &x);
 
     x = x + 821;
     x = x - 120;

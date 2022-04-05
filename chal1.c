@@ -3,7 +3,7 @@
 int main() {
     int x;
     printf("Enter the secret number: ");
-    scanf("%d\n", &x);
+    scanf("%d", &x);
 
     if (x == 1337)  {
         printf("ACCESS GRANTED :)\n");
