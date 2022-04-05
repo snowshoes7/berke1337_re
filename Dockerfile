@@ -10,9 +10,9 @@ RUN apt-get install -y gcc
 
 WORKDIR /home/ctf
 
-COPY chal1.c .
-COPY chal2.c .
-COPY chal3.c .
+COPY ./src/chal1.c .
+COPY ./src/chal2.c .
+COPY ./src/chal3.c .
 
 RUN gcc -m32 chal1.c -o chal1 -fno-stack-protector -g
 RUN gcc -m32 chal2.c -o chal2 -fno-stack-protector -g
