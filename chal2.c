@@ -5,6 +5,9 @@ int main() {
     printf("Enter the secret number: ");
     scanf("%d\n", &x);
 
+    x = x + 821;
+    x = x - 120;
+
     if (x == 1337)  {
         printf("ACCESS GRANTED :)\n");
         return 1;

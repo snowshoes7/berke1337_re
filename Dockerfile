@@ -11,8 +11,16 @@ RUN apt-get install -y gcc
 WORKDIR /home/ctf
 
 COPY chal1.c .
+COPY chal2.c .
+COPY chal3.c .
 
 RUN gcc chal1.c -o chal1 -fno-stack-protector -g
+RUN gcc chal2.c -o chal2 -fno-stack-protector -g
+RUN gcc chal3.c -o chal3 -fno-stack-protector -g
+
+RUN rm chal1.c
+RUN rm chal2.c
+RUN rm chal3.c
 
 USER ctf
 CMD ["/bin/bash"]
