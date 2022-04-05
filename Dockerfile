@@ -6,7 +6,7 @@ RUN apt-get update
 
 RUN useradd -d /home/ctf/ -m -p ctf -s /bin/bash ctf
 RUN echo "ctf:ctf" | chpasswd
-RUN apt-get install -y gcc 
+RUN apt-get install -y gcc gcc-multilib
 
 WORKDIR /home/ctf
 
