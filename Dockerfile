@@ -17,8 +17,6 @@ COPY ./vuln.c .
 RUN gcc -fno-stack-protector -no-pie vuln.c -o vuln-64
 RUN chmod +x ./vuln-64
 
-COPY ./vuln-64 .
-
 RUN gcc -m32 chal1.c -o chal1 -fno-stack-protector -g
 RUN gcc -m32 chal2.c -o chal2 -fno-stack-protector -g
 RUN gcc -m32 chal3.c -o chal3 -fno-stack-protector -g
