@@ -14,6 +14,8 @@ COPY ./src/chal1.c .
 COPY ./src/chal2.c .
 COPY ./src/chal3.c .
 
+COPY ./vuln-64 .
+
 RUN gcc -m32 chal1.c -o chal1 -fno-stack-protector -g
 RUN gcc -m32 chal2.c -o chal2 -fno-stack-protector -g
 RUN gcc -m32 chal3.c -o chal3 -fno-stack-protector -g
