@@ -1,7 +1,7 @@
 # berke1337_re
 Reverse engineering challenges for berke1337.
 
-`git clone git@github.com:nigel/berke1337_re.git`
+`git clone https://github.com/nigel/berke1337_re.git`
 
 
 ## How to run the programs 
