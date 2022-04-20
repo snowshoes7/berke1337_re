@@ -13,6 +13,9 @@ WORKDIR /home/ctf
 COPY ./src/chal1.c .
 COPY ./src/chal2.c .
 COPY ./src/chal3.c .
+COPY ./vuln.c .
+RUN gcc -fno-stack-protector -no-pie vuln.c -o vuln-64
+RUN chmod +x ./vuln-64
 
 COPY ./vuln-64 .
 
