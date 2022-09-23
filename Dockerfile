@@ -8,9 +8,10 @@ RUN useradd -d /home/ctf/ -m -p ctf -s /bin/bash ctf
 RUN echo "ctf:ctf" | chpasswd
 RUN apt-get install -y gcc
 
-COPY ./rng.c .
 
 WORKDIR /home/ctf
+
+COPY ./rng.c .
 
 RUN gcc rng.c -o rng
 RUN chmod +x ./rng
