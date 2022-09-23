@@ -10,20 +10,8 @@ RUN apt-get install -y gcc gcc-multilib
 
 WORKDIR /home/ctf
 
-COPY ./src/chal1.c .
-COPY ./src/chal2.c .
-COPY ./src/chal3.c .
-COPY ./vuln.c .
-RUN gcc -fno-stack-protector -no-pie vuln.c -o vuln-64
-RUN chmod +x ./vuln-64
-
-RUN gcc -m32 chal1.c -o chal1 -fno-stack-protector -g
-RUN gcc -m32 chal2.c -o chal2 -fno-stack-protector -g
-RUN gcc -m32 chal3.c -o chal3 -fno-stack-protector -g
-
-RUN rm chal1.c
-RUN rm chal2.c
-RUN rm chal3.c
+RUN gcc rng.c -o rng
+RUN chmod +x ./rng
 
 USER ctf
 CMD ["/bin/bash"]
