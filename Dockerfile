@@ -26,6 +26,8 @@ WORKDIR /home/ctf
 # UAF (11/10)
 COPY ./uaf-11.10/heap.c .
 COPY ./uaf-11.10/heap_demonstrate.c .
+COPY ./uaf-11.10/echo2 .
+RUN chmod +x ./echo2
 RUN gcc heap.c -o heap_chall 
 RUN gcc heap_demonstrate.c -o heap_example 
 
