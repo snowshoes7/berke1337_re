@@ -16,12 +16,18 @@ WORKDIR /home/ctf
 #RUN gcc rng.c -o rng
 
 # REVERSE ENGINEERING CHALLENGE (9/29)
-COPY ./rev-9.29/secret_program .
-COPY ./rev-9.29/bomb .
-COPY ./rev-9.29/answers.txt .
+#COPY ./rev-9.29/secret_program .
+#COPY ./rev-9.29/bomb .
+#COPY ./rev-9.29/answers.txt .
 
-RUN chmod +x ./secret_program
-RUN chmod +x ./bomb
+#RUN chmod +x ./secret_program
+#RUN chmod +x ./bomb
+
+# UAF (11/10)
+COPY ./uaf-11.10/heap.c .
+COPY ./uaf-11.10/heap_demonstrate.c .
+RUN gcc heap.c -o heap_chall 
+RUN gcc heap_demonstrate.c -o heap_example 
 
 USER ctf
 CMD ["/bin/bash"]
