@@ -1,4 +1,4 @@
-You will need Linux to run the binaries which is highly reccomended. This can be done by building then running the challenges in a docker container. Using the command in the parent directory:
+You will need Linux to run the binaries (However these can be solved without running these binaries). This can be done by building then running the challenges in a docker container. Using the command in the parent directory:
 
 `docker build -t re .`
 
@@ -12,7 +12,7 @@ You can also move these files to the instructional machines (eduroam or berkeley
 https://acropolis.cs.berkeley.edu/~account/webacct/ 
 
 
-** DIFFICULTY 1 **
+**DIFFICULTY 1**
 * simple
 * little\_engine
 * 00\_angr\_find
