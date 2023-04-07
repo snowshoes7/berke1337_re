@@ -14,8 +14,8 @@ https://acropolis.cs.berkeley.edu/~account/webacct/
 
 **DIFFICULTY 1**
 * simple
-* little\_engine
 * 00\_angr\_find
 
 **DIFFICULTY 2**
+* little\_engine [solution](https://github.com/angr/angr-doc/blob/master/examples/b01lersctf2020_little_engine/solve.py)
 * license ([solution](https://github.com/angr/angr-doc/blob/master/examples/asisctffinals2015_license/solve.py))
