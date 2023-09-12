@@ -12,10 +12,10 @@ RUN pip3 install angr ipython
 
 WORKDIR /home/ctf
 
-# INTRO CHALLENGES (9/22)
-#COPY ./intro-9.23/rng.c .
-#COPY ./intro-9.23/jail.c .
-#RUN gcc rng.c -o rng
+# INTRO CHALLENGES (9/22/22 and 9/11/23)
+COPY ./intro-9.23/rng.c .
+COPY ./intro-9.23/jail.c .
+RUN gcc rng.c -o rng
 
 # REVERSE ENGINEERING CHALLENGE (9/29)
 #COPY ./rev-9.29/secret_program .
@@ -34,8 +34,8 @@ WORKDIR /home/ctf
 #RUN gcc heap_demonstrate.c -o heap_example 
 
 # ANGR (12/1)
-COPY ./angr-12.1/a.out .
-COPY ./angr-12.1/fauxware .
+# COPY ./angr-12.1/a.out .
+# COPY ./angr-12.1/fauxware .
 
 
 USER ctf
