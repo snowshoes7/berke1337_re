@@ -14,7 +14,7 @@ WORKDIR /home/ctf
 
 # INTRO CHALLENGES (9/22/22 and 9/11/23)
 COPY ./intro-9.23/rng.c .
-COPY ./intro-9.23/jail.c .
+COPY ./intro-9.23/jail.py .
 RUN gcc rng.c -o rng
 
 # REVERSE ENGINEERING CHALLENGE (9/29)
